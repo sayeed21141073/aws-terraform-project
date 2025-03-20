@@ -4,4 +4,4 @@
 3. An RDS instance in the private subnet
 4. A security group to allow SSH access to the EC2 instance and appropriate access to the RDS instance.
 
-**Solution:** Provided the Terraform code. This code can be run by terraform init, terraform plan, terraform
+**Solution:** Provided the Terraform code. This code can be run by terraform init, terraform plan, terraform apply.
