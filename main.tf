@@ -57,7 +57,7 @@ resource "aws_security_group" "ec2_sg_2" {
 
 # Creating the EC2 Instance
 resource "aws_instance" "my_ec2_2" {
-  ami                    = "ami-08b5b3a93ed654d19"  # Ensure this AMI is valid for your region
+  ami                    = "ami-08b5b3a93ed654d19"  
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.public_subnet_2.id
   vpc_security_group_ids = [aws_security_group.ec2_sg_2.id]
