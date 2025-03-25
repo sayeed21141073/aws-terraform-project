@@ -104,6 +104,7 @@ resource "aws_db_instance" "my_rds_2" {
   instance_class       = "db.t3.micro"
   username             = "sayeed"
   password             = "12345678"
+  db_subnet_group_name = aws_db_subnet_group.my_db_subnet_group_2.name
   parameter_group_name = "default.mysql8.0"
   skip_final_snapshot  = true
 }
